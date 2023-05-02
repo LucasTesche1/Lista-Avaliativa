@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main(){
+	
+	int num, maiorNumero=0, menorNumero;
+	
+	do{
+		
+		printf("Digite um numero: ");
+		scanf("%d",&num);
+		
+		if (num < menorNumero && num >= 0){
+			menorNumero=num;
+		}
+		
+		if (num > maiorNumero){
+			maiorNumero=num;
+		}
+		
+	}
+	while(num>0);
+	
+
+	if (num<0){
+		
+		printf("\nO menor numero e: %d",menorNumero);
+		printf("\nO maior numero e: %d",maiorNumero);
+	}	
+		
+	
+	
+	return 0;	
+	}
+	
